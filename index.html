@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>โรงเรียนเรียงราษฎร์อุปถัมภ์</title>
+  <style>
+    :root{--blue:#0b7dc3;--light:#eaf6fb;--white:#ffffff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family: "Noto Sans Thai", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:linear-gradient(180deg,var(--light),var(--white));color:#003049}
+    header{background:var(--blue);color:var(--white);padding:28px 16px;text-align:center}
+    .container{max-width:980px;margin:32px auto;padding:0 16px}
+    h1{margin:0;font-size:28px}
+    p.lead{margin-top:12px;font-size:18px;color:#033d5a}
+    .card{background:var(--white);border-radius:10px;padding:24px;box-shadow:0 6px 18px rgba(3,61,90,0.08)}
+    .btn{display:inline-block;background:var(--blue);color:var(--white);padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:600;margin-top:16px}
+    .btn:hover{filter:brightness(0.95)}
+    footer{margin-top:36px;text-align:center;color:#02506f;font-size:14px}
+    @media (min-width:700px){h1{font-size:36px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>โรงเรียนเรียงราษฎร์อุปถัมภ์</h1>
+      <div style="font-size:14px;margin-top:6px;opacity:.95">อำเภอรือเสาะ จังหวัดนราธิวาส</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>ยินดีต้อนรับ</h2>
+      <p class="lead">ยินดีต้อนรับสู่เว็บไซต์หลักของโรงเรียนเรียงราษฎร์อุปถัมภ์ เราหวังว่าจะเป็นช่องทางในการให้ข้อมูลข่าวสาร และเชื่อมต่อกับผู้ปกครองและชุมชน</p>
+
+      <!-- ลิงค์ไปยังระบบนิเทศออนไลน์: แก้ href ให้เป็น URL ของระบบจริงเมื่อพร้อม -->
+      <a class="btn" href="/online-supervision" title="เข้าสู่ระบบนิเทศออนไลน์">เข้าสู่ระบบนิเทศออนไลน์</a>
+
+      <p style="margin-top:18px;color:#034a6b;font-size:14px">หากต้องการให้ลิงค์ไปยังระบบนิเทศออนไลน์ที่อยู่ภายนอก ให้แก้ค่า href ในไฟล์นี้เป็น URL ของระบบที่ต้องการ</p>
+    </div>
+
+    <footer>
+      &copy; <span id="year"></span> โรงเรียนเรียงราษฎร์อุปถัมภ์
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
